@@ -1,540 +1,989 @@
-<!DOCTYPE html>
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1e293b;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .con {
+      max-width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MealMitra</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+.subt {
+      font-family: 'Caveat', cursive;
+      color: #ff4757;
+      font-size: 26px;
+      line-height: 1.2;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .ttl {
+      font-size: 36px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .subttl {
+      font-size: 15px;
+      color: #64748b;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cen {
+      text-align: center;
+    }
 
-  <link rel="stylesheet" href="style.css">
-
-<body>
-<!-- BEGIN: MainHeader -->
-<header class="hd" data-purpose="site-navigation">
-<div class="con hi">
-<!-- Brand logo and daily slogan -->
-<a class="logo" href="#">
-<div class="lic">🍱</div>
-<div>
-<span class="lt">MealMitra</span>
-<span class="ltag">Ghar Ka Khana, Daily</span>
-</div>
-</a>
-<!-- Primary navigation menu -->
-<nav>
-<ul class="navs">
-<li><a class="nav on" href="#">Home</a></li>
-<li><a class="nav" href="#">Weekly Menu</a></li>
-<li><a class="nav" href="#">Plans &amp; Pricing</a></li>
-<li><a class="nav" href="#">My Subscription</a></li>
-<li><a class="nav" href="#">Help &amp; Support</a></li>
-<li><a class="nav" href="#">Reviews</a></li>
-</ul>
-</nav>
-<!-- User status and profile capsule -->
-<div class="hr">
-<div class="stat">
-          18 Meals Left • Next: 12:30 PM
-        </div>
-<div class="prof">
-<div class="av">AS</div>
-<div class="nw">
-<span class="un">Abhey Singh</span>
-<span class="ur">Verified Student</span>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- END: MainHeader -->
-<main>
-<!-- BEGIN: HeroSection -->
-<section class="hero" data-purpose="landing-hero">
-<div class="con hg">
-<!-- Left Hero Content Column -->
-<div class="hc">
-<div class="rate">
-            ★ RATED 4.8 BY 10,000+ HAPPY CUSTOMERS
-          </div>
-<h1 class="hline">
-            Healthy Home-Style
-            <span class="red">Meals Delivered Daily</span>
-</h1>
-<p class="desc">
-            Starting at just <strong>₹49/meal</strong> — No mess, no hassle. Just delicious, wholesome food cooked with pure desi ghee and cold-pressed oils at your doorstep.
-          </p>
-<div class="acts">
-<a class="b1" href="#">Try 1 Meal @ ₹49 →</a>
-<a class="b2" href="#">View Plans →</a>
-</div>
-<div class="perks">
-<div class="perk">
-<span>🌿</span> Fresh Daily
-            </div>
-<div class="perk">
-<span>🛡️</span> 100% Hygienic
-            </div>
-<div class="perk">
-<span>🍯</span> Pure Desi Ghee
-            </div>
-</div>
-</div>
-<!-- Right Hero Mockup Column -->
-<div class="hm">
-<div class="hv">
-<!-- Using user provided image token -->
-<img alt="Delicious Indian Thali spread and fresh lunch box" class="himg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ0Ki_Uz-yESkEGWgRyJsvZ_TcETyIu05_hT3WupRDUgqdaixzNGcA5EQPTwgEscJoMTKZxrBvkf8Cv8E63FiHLDHl_HwJDtiJnZ-HD1KOKeNXeXBWKz3Ay-ATrXqgYQlScjuWSTwix3sEP9VHlqoFx6-rdrNX-b445EgJjGcOxEGWZ99R8WDuAU8Y4C2Zdjr6KtcctRNat4718oZM_9hPCU8Ycc6l8Hsasa9ZBhaqsqUMlbdQmGdu8DOiD_RG4ayLOw"/>
-<div class="price">
-<span class="psub">STARTING AT</span>
-<span class="amt">₹49<span style="font-size:10px;">/meal</span></span>
-</div>
-<div class="proof">
-<div class="thumb">📦</div>
-<div>
-<div class="bt">50,000+</div>
-<div class="bs">Meals Delivered Fresh</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: HeroSection -->
-<!-- BEGIN: ProblemVsSolutionSection -->
-<section class="cmp" data-purpose="problem-vs-solution">
-<div class="con cen">
-<span class="subt">Tired of this?</span>
-<h2 class="ttl">Say Goodbye to Food Struggles</h2>
-<div class="cg">
-<!-- Card 1: Problem / Struggle -->
-<div class="bad left" style="text-align: left;">
-<div class="bh">
-<span style="font-size: 20px;">😣</span>
-<h3 class="btit">The Daily Struggle</h3>
-</div>
-<ul class="bl">
-<li class="bi">
-<span class="x">✕</span>
-<span>Boring mess food every single day with tasteless watery dal</span>
-</li>
-<li class="bi">
-<span class="x">✕</span>
-<span>Unhealthy outside food causing acidity, palm-oil bloat &amp; lethargy</span>
-</li>
-<li class="bi">
-<span class="x">✕</span>
-<span>Daily cooking hassle, grocery runs, and unpredictable maids</span>
-</li>
-<li class="bi">
-<span class="x">✕</span>
-<span>Inconsistent quality, unhygienic packaging, and spilled gravies</span>
-</li>
-<li class="bi">
-<span class="x">✕</span>
-<span>Zero refund or rollover when skipping meals on weekends</span>
-</li>
-</ul>
-</div>
-<!-- Card 2: Solution / MealMitra Way -->
-<div class="good left" style="text-align: left;">
-<div class="gh">
-<span style="font-size: 20px;">💖</span>
-<h3 class="gtit">The MealMitra Way</h3>
-</div>
-<ul class="gl">
-<li class="gi">
-<span class="ck">✓</span>
-<span>Fresh, tasty home-style meals made with 100% Gir cow ghee</span>
-</li>
-<li class="gi">
-<span class="ck">✓</span>
-<span>Balanced &amp; nutritious diet designed by certified home chefs</span>
-</li>
-<li class="gi">
-<span class="ck">✓</span>
-<span>Zero cooking effort — hot meal delivered exactly before lunchtime</span>
-</li>
-<li class="gi">
-<span class="ck">✓</span>
-<span>Consistent quality guaranteed in thermal stainless steel dabbas</span>
-</li>
-<li class="gi">
-<span class="ck">✓</span>
-<span>New rotating regional menu every day: Punjabi, Gujarati, Malwi</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- END: ProblemVsSolutionSection -->
-<!-- BEGIN: MealPlansSection -->
-<section class="plans" data-purpose="pricing-plans">
-<div class="con cen">
-<span class="subt">Choose your style</span>
-<h2 class="ttl">Four Ways to Eat Healthy</h2>
-<p class="subttl">From budget-friendly to premium — we have the perfect meal plan for everyone</p>
-<div class="pg">
-<!-- Plan 1: Regular Meal -->
-<div class="card">
-<span class="tag yellow">MOST POPULAR</span>
-<div class="pi" style="background:#fef9c3; color:#ca8a04;">🍱</div>
-<h3 class="pn">Regular Meal</h3>
-<div class="pc">Affordable &amp; Tasty</div>
-<p class="pd">Affordable daily meals with authentic home-style taste. Perfect for students and everyday office lunches.</p>
-<div>
-<div class="pr">
-<div class="pb">
-<span class="ps">Starting from</span>
-<div class="pa">₹119<span>/meal</span></div>
-</div>
-<a class="pbtn" href="#">Explore →</a>
-</div>
-<div class="pnote">Try at ₹49 • No commitment</div>
-</div>
-</div>
-<!-- Plan 2: Mini Meal -->
-<div class="card">
-<span class="tag green">BEST VALUE</span>
-<div class="pi" style="background:#dcfce7; color:#16a34a;">🥗</div>
-<h3 class="pn">Mini Meal</h3>
-<div class="pc">Light &amp; Pocket-Friendly</div>
-<p class="pd">A delicious, healthy, and affordable meal designed to satisfy light hunger without post-lunch heaviness.</p>
-<div>
-<div class="pr">
-<div class="pb">
-<span class="ps">Starting from</span>
-<div class="pa">₹89<span>/meal</span></div>
-</div>
-<a class="pbtn" href="#">Explore →</a>
-</div>
-<div class="pnote">Try at ₹49 • No commitment</div>
-</div>
-</div>
-<!-- Plan 3: Protein Meal Box -->
-<div class="card">
-<span class="tag orange">PREMIUM FITNESS</span>
-<div class="pi" style="background:#ffedd5; color:#ea580c;">🍗</div>
-<h3 class="pn">Protein Meal Box</h3>
-<div class="pc">Balanced High-Protein</div>
-<p class="pd">A nutritious and high-protein meal crafted to fuel your body with paneer, sprouts, and soya power.</p>
-<div>
-<div class="pr">
-<div class="pb">
-<span class="ps">Starting from</span>
-<div class="pa">₹180<span>/meal</span></div>
-</div>
-<a class="pbtn" href="#">Explore →</a>
-</div>
-<div class="pnote">Try at ₹49 • No commitment</div>
-</div>
-</div>
-<!-- Plan 4: Special Thali -->
-<div class="card">
-<span class="tag purple">CHEF FEAST</span>
-<div class="pi" style="background:#f3e8ff; color:#9333ea;">👑</div>
-<h3 class="pn">Special Thali</h3>
-<div class="pc">Authentic Grand Feast</div>
-<p class="pd">Premium dining with handcrafted regional subzis, slow-cooked dal makhani, desi sweets, and salad.</p>
-<div>
-<div class="pr">
-<div class="pb">
-<span class="ps">Starting from</span>
-<div class="pa">₹149<span>/meal</span></div>
-</div>
-<a class="pbtn" href="#">Explore →</a>
-</div>
-<div class="pnote">Try at ₹49 • No commitment</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: MealPlansSection -->
-<!-- BEGIN: BenefitsSection -->
-<section class="feats" data-purpose="features-overview">
-<div class="con cen">
-<span class="subt">Everything you need</span>
-<h2 class="ttl">What You Get with MealMitra</h2>
-<div class="fg">
-<!-- Perk 1 -->
-<div class="fc" style="background-color: #fffbeb;">
-<div class="fi" style="background: #fef3c7; color: #d97706;">🍲</div>
-<h3 class="ft">Daily Fresh Meals</h3>
-<p class="fd">Prepared fresh every day with highest-quality ingredients. No stale food, zero chemicals, cooked in small batches.</p>
-</div>
-<!-- Perk 2 -->
-<div class="fc" style="background-color: #fff1f2;">
-<div class="fi" style="background: #ffe4e6; color: #e11d48;">❤️</div>
-<h3 class="ft">Healthy &amp; Balanced</h3>
-<p class="fd">Nutritionally balanced meals designed for everyday wellbeing. Less oil, zero artificial colors, and light on stomach.</p>
-</div>
-<!-- Perk 3 -->
-<div class="fc" style="background-color: #f0f9ff;">
-<div class="fi" style="background: #e0f2fe; color: #0284c7;">📅</div>
-<h3 class="ft">Flexible Plans</h3>
-<p class="fd">Trial, weekly, monthly — choose whatever fits your routine. Upgrade or switch between mini and grand thalis anytime.</p>
-</div>
-<!-- Perk 4 -->
-<div class="fc" style="background-color: #f0fdfa;">
-<div class="fi" style="background: #ccfbf1; color: #0d9488;">🛵</div>
-<h3 class="ft">Doorstep Delivery</h3>
-<p class="fd">Hot meals delivered straight to your hostel gate, office desk, or flat right on time between 12:15 PM and 1:00 PM.</p>
-</div>
-<!-- Perk 5 -->
-<div class="fc" style="background-color: #faf5ff;">
-<div class="fi" style="background: #f3e8ff; color: #7e22ce;">⏸️</div>
-<h3 class="ft">Easy Pause / Skip</h3>
-<p class="fd">Going out or have lunch plans? 1-tap skip before 10:30 AM and 100% meal credits carry forward into your next week.</p>
-</div>
-<!-- Perk 6 -->
-<div class="fc" style="background-color: #f0fdf4;">
-<div class="fi" style="background: #dcfce7; color: #16a34a;">🌱</div>
-<h3 class="ft">Pure Veg &amp; Jain Options</h3>
-<p class="fd">100% vegetarian kitchens with dedicated Jain / no-onion-garlic options prepared in certified hygienic environments.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: BenefitsSection -->
-<!-- BEGIN: HowItWorksSection -->
-<section class="steps" data-purpose="how-it-works">
-<div class="con cen">
-<span class="subt">Simple as 1-2-3</span>
-<h2 class="ttl">How MealMitra Works</h2>
-<div class="sg">
-<!-- Step 1 -->
-<div class="sc">
-<div class="sn" style="background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe;">01</div>
-<h3 class="stit">Choose Your Plan</h3>
-<p class="sd">Select a trial meal or pick a flexible weekly or monthly subscription that matches your appetite.</p>
-</div>
-<!-- Step 2 -->
-<div class="sc">
-<div class="sn" style="background: #fdf2f8; color: #be185d; border-color: #fbcfe8;">02</div>
-<h3 class="stit">We Prepare Fresh</h3>
-<p class="sd">Our experienced home chefs prepare your meal fresh every morning with cold-pressed oils &amp; love.</p>
-</div>
-<!-- Step 3 -->
-<div class="sc">
-<div class="sn" style="background: #f0fdf4; color: #15803d; border-color: #bbf7d0;">03</div>
-<h3 class="stit">Delivered to You</h3>
-<p class="sd">Piping hot, delicious home-cooked meals delivered in eco-friendly dabbas right on schedule.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: HowItWorksSection -->
-<!-- BEGIN: TestimonialsSection -->
-<section class="revs" data-purpose="customer-reviews">
-<div class="con cen">
-<span class="subt">Happy customers</span>
-<h2 class="ttl">What Our Customers Say</h2>
-<div class="rh">
-<span class="star">★★★★★</span>
-<span>5/5 from 1,200+ reviews</span>
-</div>
-<div class="rg">
-<!-- Testimonial 1 -->
-<div class="rc">
-<div>
-<div class="rs star">★★★★★</div>
-<p class="rt">"The food is very nice, prepared in a hygienic condition. Being away from home and finding apna-thal khana as 'ghar jaisa khana', made my journey easy. Thank you MealMitra for providing me with such good meal!"</p>
-</div>
-<div class="ra">
-<div class="aa" style="background:#fee2e2; color:#ef4444;">PN</div>
-<div style="text-align: left;">
-<div class="an">Priyansh Nayak</div>
-<div class="ar">Software Engineer, Bangalore</div>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="rc">
-<div>
-<div class="rs star">★★★★★</div>
-<p class="rt">"Good packing, good delivery timing. Regular thali includes salad as well which I appreciate! 100% pure desi ghee phulkas stay soft till 2 PM even in office air conditioning."</p>
-</div>
-<div class="ra">
-<div class="aa" style="background:#dcfce7; color:#16a34a;">DA</div>
-<div style="text-align: left;">
-<div class="an">Dev Arora</div>
-<div class="ar">CA Student, Pune</div>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="rc">
-<div>
-<div class="rs star">★★★★★</div>
-<p class="rt">"Great experience with their food and delivery services. Fully recommended for working professionals who don't have time to cook every evening! 1-click skip feature works like magic."</p>
-</div>
-<div class="ra">
-<div class="aa" style="background:#e0f2fe; color:#0284c7;">AP</div>
-<div style="text-align: left;">
-<div class="an">Anubhav Pandey</div>
-<div class="ar">Marketing Manager, Mumbai</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: TestimonialsSection -->
-<!-- BEGIN: KitchenTransparencyVideoSection -->
-<section class="vid" data-purpose="kitchen-video-transparency">
-<div class="con">
-<span class="subt" style="color: #ff6b81;">Watch &amp; learn</span>
-<h2 class="vt">See How MealMitra Works</h2>
-<p class="vs">From our hygienic FSSAI kitchen to your doorstep — watch the journey of your daily thali</p>
-<div class="vm">
-<img alt="MealMitra Kitchen Behind the scenes" class="vp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkk39ZlNHwa0aPVtH0rnCeIwFIk3A8M4CJKeNnRFyqFGXj9ez6Db8tj6BDdxBLZun3uzu15bBbwUQ6Q8ga_alABI3PcPf_JF-V_rDaMmPi5Y_mCK3VZ_nSJ9bNwLKLs6HGyiCTiqHb7Inxc5_nQPR7tfG2EeegPbNS67kjk8zMBq4n8BiXoEZXDNYOrKLoyGRJnXRkbwD4nUMc8j3nCAbYKW8yiH0HQQdpR5DtKvw6zH26txiij4AmZSFn5KIc0gS6sQ"/>
-<button aria-label="Play Kitchen Video" class="play">
-            ▶
-          </button>
-<div class="tm">2:38</div>
-</div>
-<p class="vf">Watch our 2-minute explainer video to learn how we deliver happiness</p>
-</div>
-</section>
-<!-- END: KitchenTransparencyVideoSection -->
-<!-- BEGIN: FAQSection -->
-<section class="faq" data-purpose="frequently-asked-questions">
-<div class="con cen">
-<span class="subt">Got questions?</span>
-<h2 class="ttl">Frequently Asked Questions</h2>
-<div class="fq left" style="text-align: left;">
-<div class="fiq">
-<div class="q">
-<span>Why is MealMitra better than regular tiffin services?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-<div class="fiq">
-<div class="q">
-<span>Can I pause my subscription or skip meals?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-<div class="fiq">
-<div class="q">
-<span>What if I don't like the food?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-<div class="fiq">
-<div class="q">
-<span>Is delivery reliable and daily?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-<div class="fiq">
-<div class="q">
-<span>Are the meals healthy and nutritious?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-<div class="fiq">
-<div class="q">
-<span>Do you offer veg and non-veg options?</span>
-<span class="qa">∨</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: FAQSection -->
-<!-- BEGIN: FinalCTASection -->
-<section class="cta" data-purpose="conversion-cta">
-<div class="con">
-<div class="ctc">
-<span class="subt">Ready to start?</span>
-<h2 class="ct">Start Your Healthy Eating Journey Today</h2>
-<p class="cd">Join 10,000+ happy customers who have made the switch to healthy, home-cooked food</p>
-<div class="cbg">
-<a class="b1" href="#">Try 1 Meal @ ₹49</a>
-<a class="b2" href="#">Subscribe Now →</a>
-</div>
-<p class="cn">No credit card required for trial • Cancel anytime</p>
-</div>
-</div>
-</section>
-<!-- END: FinalCTASection -->
-</main>
-<!-- BEGIN: MainFooter -->
-<footer class="foot" data-purpose="site-footer">
-<div class="con">
-<div class="ftg">
-<!-- Brand Info -->
-<div>
-<div class="fbt">
-<span style="color:#ff4757;">🍱</span> MealMitra
-          </div>
-<p class="fab">
-            Bringing the taste of home to your doorstep. Fresh, healthy, and delicious meals delivered daily across top tech parks and universities.
-          </p>
-<div class="fci">
-<span>📞</span> +91 1800-419-6325
-          </div>
-<div class="fci">
-<span>✉️</span> support@mealmitra.com
-          </div>
-<div class="fci">
-<span>📍</span> Bengaluru • Pune • Mumbai
-          </div>
-</div>
-<!-- Links: Company -->
-<div>
-<h4 class="fct">COMPANY</h4>
-<ul class="fll">
-<li><a class="fl" href="#">Meal Plans</a></li>
-<li><a class="fl" href="#">Healthy Meals</a></li>
-<li><a class="fl" href="#">Subscription</a></li>
-<li><a class="fl" href="#">About Us</a></li>
-<li><a class="fl" href="#">Our Kitchens</a></li>
-</ul>
-</div>
-<!-- Links: Support -->
-<div>
-<h4 class="fct">SUPPORT</h4>
-<ul class="fll">
-<li><a class="fl" href="#">Help Center</a></li>
-<li><a class="fl" href="#">Contact Us</a></li>
-<li><a class="fl" href="#">FAQ</a></li>
-<li><a class="fl" href="#">Pause/Skip Policy</a></li>
-<li><a class="fl" href="#">Feedback</a></li>
-</ul>
-</div>
-<!-- Links: Legal -->
-<div>
-<h4 class="fct">LEGAL &amp; TRUST</h4>
-<div class="fb">
-<div class="fst">FSSAI Certified</div>
-<div class="fsn">Lic. 112213344005166</div>
-</div>
-<ul class="fll">
-<li><a class="fl" href="#">Terms of Service</a></li>
-<li><a class="fl" href="#">Privacy Policy</a></li>
-<li><a class="fl" href="#">Refund Policy</a></li>
-<li><a class="fl" href="#">Cookie Policy</a></li>
-</ul>
-</div>
-</div>
-<!-- Copyright & Social bar -->
-<div class="fbot">
-<div>
-          © 2025 MealMitra Foods Pvt Ltd. All rights reserved.
-        </div>
-<div class="social">
-<a aria-label="WhatsApp" class="soc" href="#">💬</a>
-<a aria-label="Instagram" class="soc" href="#">📷</a>
-<a aria-label="Twitter" class="soc" href="#">🐦</a>
-<a aria-label="Facebook" class="soc" href="#">📘</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- END: MainFooter -->
-</body></html>
+.hd {
+      border-bottom: 1px solid #f1f5f9;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 14px 0;
+    }
+    .hi {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lic {
+      width: 32px;
+      height: 32px;
+      background: #fff1f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border: 1px solid #ffccc7;
+    }
+    .lt {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+    .ltag {
+      font-size: 9px;
+      font-weight: 600;
+      color: #94a3b8;
+      display: block;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+    .navs {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #475569;
+      transition: color 0.2s;
+    }
+    .nav.active, .nav:hover {
+      color: #ff4757;
+    }
+    .hr {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .stat {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      color: #059669;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 9999px;
+    }
+    .stat::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #10b981;
+      border-radius: 50%;
+    }
+    .prof {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      padding: 4px 10px 4px 4px;
+      border-radius: 9999px;
+      border: 1px solid #e2e8f0;
+    }
+    .av {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #fee2e2;
+      color: #ef4444;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nw {
+      display: flex;
+      flex-direction: column;
+    }
+    .un {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1e293b;
+      line-height: 1.1;
+    }
+    .ur {
+      font-size: 9px;
+      color: #10b981;
+      font-weight: 600;
+    }
+
+.hero {
+      padding: 56px 0 64px;
+      position: relative;
+    }
+    .hg {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .rate {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      margin-bottom: 20px;
+      letter-spacing: 0.03em;
+    }
+    .hline {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.12;
+      color: #0f172a;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .hline .red {
+      color: #ff4757;
+      display: block;
+    }
+    .desc {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #64748b;
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .acts {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .b1 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ff4757;
+      color: #ffffff;
+      font-size: 14.5px;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 14px rgba(255, 71, 87, 0.35);
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .b1:hover {
+      background-color: #e03646;
+      box-shadow: 0 6px 20px rgba(255, 71, 87, 0.45);
+    }
+    .b2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: #334155;
+      font-size: 14.5px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      border: 1px solid #cbd5e1;
+      transition: all 0.2s ease;
+    }
+    .b2:hover {
+      border-color: #94a3b8;
+      background-color: #f8fafc;
+    }
+    .perks {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 24px;
+    }
+    .perk {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+    }
+    .hm {
+      position: relative;
+    }
+    .hv {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.12);
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+    }
+    .himg {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+    .price {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: #ff4757;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 8px 14px;
+      text-align: right;
+      box-shadow: 0 8px 16px rgba(255, 71, 87, 0.3);
+    }
+    .price .psub {
+      font-size: 9px;
+      text-transform: uppercase;
+      font-weight: 700;
+      opacity: 0.9;
+      display: block;
+    }
+    .price .amt {
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .proof {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      border: 1px solid #f1f5f9;
+    }
+    .thumb {
+      width: 34px;
+      height: 34px;
+      background: #ecfdf5;
+      color: #10b981;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .bt {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.1;
+    }
+    .bs {
+      font-size: 10px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+.cmp {
+      padding: 70px 0;
+      background-color: #fafbfc;
+    }
+    .cg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bad {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 32px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    }
+    .bh {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .btit {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1e293b;
+    }
+    .bl {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .bi {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13.5px;
+      color: #475569;
+      line-height: 1.45;
+    }
+    .x {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fee2e2;
+      color: #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .good {
+      background: linear-gradient(145deg, #ff5757 0%, #ff4757 100%);
+      border-radius: 20px;
+      padding: 32px;
+      color: #ffffff;
+      box-shadow: 0 16px 32px -8px rgba(255, 71, 87, 0.4);
+    }
+    .gh {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .gtit {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .gl {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .gi {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13.5px;
+      color: #fff5f5;
+      line-height: 1.45;
+    }
+    .ck {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+.plans {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    .pg {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #f1f5f9;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.1);
+    }
+    .tag {
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 9.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 10px;
+      border-radius: 9999px;
+    }
+    .yellow {
+      background: #fef08a;
+      color: #854d0e;
+    }
+    .green {
+      background: #bbf7d0;
+      color: #166534;
+    }
+    .orange {
+      background: #fed7aa;
+      color: #9a3412;
+    }
+    .purple {
+      background: #e9d5ff;
+      color: #6b21a8;
+    }
+    .pi {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 14px;
+      margin-top: 6px;
+    }
+    .pn {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .pc {
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .pd {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.45;
+      margin-bottom: 24px;
+      min-height: 52px;
+    }
+    .pr {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-top: 14px;
+      border-top: 1px dashed #e2e8f0;
+    }
+    .pb {
+      display: flex;
+      flex-direction: column;
+    }
+    .ps {
+      font-size: 10px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    .pa {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1;
+    }
+    .pa span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+    }
+    .pbtn {
+      background: #ff4757;
+      color: #ffffff;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      transition: background 0.2s;
+    }
+    .pbtn:hover {
+      background: #e03646;
+    }
+    .pnote {
+      font-size: 10px;
+      color: #94a3b8;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+.feats {
+      padding: 70px 0;
+      background: #fbfcfe;
+    }
+    .fg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 44px;
+    }
+    .fc {
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .fi {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .ft {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .fd {
+      font-size: 12.5px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+.steps {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    .sg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 48px;
+      position: relative;
+    }
+    .sc {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sn {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      position: relative;
+      border: 2px dashed #93c5fd;
+    }
+    .stit {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .sd {
+      font-size: 12.5px;
+      color: #64748b;
+      line-height: 1.5;
+      max-width: 250px;
+    }
+
+.revs {
+      padding: 70px 0;
+      background: #f8fafc;
+    }
+    .rh {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #64748b;
+      margin-top: 6px;
+    }
+    .star {
+      color: #eab308;
+    }
+    .rg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 44px;
+    }
+    .rc {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .rs {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .rt {
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+    .ra {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .aa {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: #0f172a;
+      font-size: 12px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .an {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .ar {
+      font-size: 10.5px;
+      color: #94a3b8;
+    }
+
+.vid {
+      background: #0b1120;
+      padding: 80px 0;
+      color: #ffffff;
+      text-align: center;
+    }
+    .vt {
+      font-size: 34px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .vs {
+      font-size: 14px;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    .vm {
+      max-width: 720px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      border: 1px solid #1e293b;
+      position: relative;
+    }
+    .vp {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.85);
+    }
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background: #ff4757;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 22px;
+      box-shadow: 0 0 30px rgba(255, 71, 87, 0.7);
+      transition: transform 0.2s;
+    }
+    .play:hover {
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+    .tm {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .vf {
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 18px;
+    }
+
+.faq {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+    .fq {
+      max-width: 780px;
+      margin: 40px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .fiq {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .q {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1e293b;
+      cursor: pointer;
+      user-select: none;
+    }
+    .qa {
+      color: #94a3b8;
+      font-size: 14px;
+      transition: transform 0.2s;
+    }
+    .ans {
+      padding: 0 20px 16px;
+      font-size: 13px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+.cta {
+      padding: 40px 0 80px;
+    }
+    .ctc {
+      background: #fff8f8;
+      border: 1px solid #ffe4e6;
+      border-radius: 28px;
+      padding: 56px 24px;
+      text-align: center;
+    }
+    .ct {
+      font-size: 34px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .cd {
+      font-size: 13.5px;
+      color: #64748b;
+      margin-bottom: 28px;
+    }
+    .cbg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .cn {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+
+.foot {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 60px 0 30px;
+      font-size: 13px;
+    }
+    .ftg {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .fbt {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .fab {
+      font-size: 12.5px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      max-width: 320px;
+    }
+    .fci {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+    .fct {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .fll {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .fl {
+      font-size: 12.5px;
+      color: #94a3b8;
+      transition: color 0.2s;
+    }
+    .fl:hover {
+      color: #ffffff;
+    }
+    .fb {
+      border: 1px solid #334155;
+      background: #1e293b;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .fst {
+      font-size: 11px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+    .fsn {
+      font-size: 10px;
+      color: #64748b;
+    }
+    .fbot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      font-size: 11.5px;
+    }
+    .social {
+      display: flex;
+      gap: 12px;
+    }
+    .soc {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #1e293b;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+    }
