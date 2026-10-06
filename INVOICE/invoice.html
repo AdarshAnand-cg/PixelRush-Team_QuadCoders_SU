@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealMitra - Tax Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="brand">
+      <img src="/logo.png" alt="" width="50px">
+      <div class="brand-text">
+        <h1>MealMitra</h1>
+        <span>Ghar Ka Khana, Daily</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/Index After Login/indexAfterLogin.html">Home</a></li>
+      <li><a href="/WeeklyMenu/menu.html">Weekly Menu</a></li>
+      <li><a href="/Plan and Comparison/plan_and_comparison.html">Plans & Pricing</a></li>
+      <li><a href="/MEAL SUBSCRIPTION/subscription.html" class="active">My Subscription</a></li>
+      <li><a href="/HELP PAGE/help.html">Help & Support</a></li>
+      <li><a href="/REVIEW/review.html">Reviews</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="status-pill">18 Meals Left • Next: 12:30 PM</div>
+      <div class="user-profile">
+        <div class="avatar">AS</div>
+        <div>
+          <div style="font-weight: bold; font-size: 11px;">Abhay Singh</div>
+          <div style="font-size: 9px; color: #10b981;">Verified Student</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Body & Actions -->
+  <div class="container">
+    <div class="actions-bar">
+      <div>
+        <a href="#" class="back-btn">&larr; Back to My Subscription</a>
+        <span class="status-badge">PAID & ACTIVE • 16 Oct 2025, 01:15 PM</span>
+      </div>
+      <div class="action-buttons">
+        <button class="btn">Print</button>
+        <button class="btn">Download PDF</button>
+        <button class="btn btn-orange">Email Receipt</button>
+      </div>
+    </div>
+
+    <!-- Main Tax Invoice Box -->
+    <div class="invoice-card">
+      
+      <!-- Top Invoice Details -->
+      <header class="invoice-header">
+        <div class="company-details">
+          <h1 style="color:#ff5200; font-size: 20px;">MealMitra</h1>
+          <div class="tagline">GHAR JAISA SWAD, ROZANA</div>
+          <address>
+            <strong>MealMitra Foods Pvt. Ltd.</strong><br>
+            Student Hub #4, University Enclave, North Campus<br>
+            New Delhi, Delhi - 110007, India<br>
+            GSTIN: 07AABCM8921P1Z4 | FSSAI Lic. #10023011000492
+          </address>
+        </div>
+        <div class="invoice-meta">
+          <h2>PAYMENT INVOICE</h2>
+          <div class="inv-number">#MM-INV-2025-94812</div>
+          <div class="meta-list">
+            <div><strong>Date of Issue:</strong> 16 Oct 2025</div>
+            <div><strong>Subscription ID:</strong> #MM-SUB-49521</div>
+            <div><strong>Billing Period:</strong> 16 Oct – 15 Nov 2025</div>
+            <div><strong>Plan Cycle:</strong> 26 Days (Mon–Sat)</div>
+            <div><strong>Payment Ref (UTR):</strong> UPI-20251016-98110492</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Customer & Payment Metadata Cards -->
+      <section class="info-grid">
+        <div class="info-card">
+          <h3>Billed To (Student)</h3>
+          <div class="name">Abhay Singh</div>
+          <p><strong>Roll #23/CS/104</strong> • Swaminarayan University, Kalol</p>
+          <p>Hostel Address: Room 212, Hostel Block Codinggita, Swaminarayan University Kalol, Ahemdabad - 110007</p>
+          <p>Mobile: +91 98110 49521</p>
+          <p>Email: abhay.singh@campus.in</p>
+        </div>
+        <div class="info-card">
+          <h3>Payment Confirmation</h3>
+          <p style="color: #059669; font-weight: bold;">✔ Transaction Successful</p>
+          <p>Mode: Instant UPI Autopay</p>
+          <p>UPI ID: abhay.singh@paytm</p>
+          <p>Bank Ref: AXIS-UPI-984128912</p>
+          <p>Gateway: Razorpay Student Connect</p>
+          <div style="margin-top: 8px;">
+            <span style="background: #e5e7eb; padding: 2px 6px; border-radius: 3px; font-size: 9px;">BHIM UPI</span>
+            <span style="background: #e5e7eb; padding: 2px 6px; border-radius: 3px; font-size: 9px;">FSSAI Certified Kitchen</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Invoice Items Table -->
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th style="width: 5%;">#</th>
+            <th style="width: 45%;">Item & Description</th>
+            <th style="width: 20%;">Delivery Schedule</th>
+            <th style="width: 10%;" class="text-center">Meals Count</th>
+            <th style="width: 10%;" class="text-right">Unit Rate</th>
+            <th style="width: 10%;" class="text-right">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td class="item-desc">
+              <div class="item-title">Student Saver Monthly Tiffin Plan (26 Days)</div>
+              <div class="item-sub">Pure Veg Homestyle Daily Thali: 4 Soft Phulkas (Ghee-brushed), Dal Tadka / Makhani, Seasonal Sabzi, Jeera Rice & Fresh Salad. Includes Sunday special dessert surprise.</div>
+            </td>
+            <td>
+              <strong>Lunch & Dinner</strong><br>
+              <span style="font-size: 10px; color: #6b7280;">Lunch: 12:30 PM | Dinner: 07:45 PM<br>Mon to Sat (26 Service Days)</span>
+            </td>
+            <td class="text-center">
+              <strong>52 Meals</strong><br>
+              <span style="font-size: 9px; color: #9ca3af;">(2 meals/day)</span>
+            </td>
+            <td class="text-right">₹73.08</td>
+            <td class="text-right"><strong>₹3,399.00</strong></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td class="item-desc">
+              <div class="item-title">Eco-Friendly Stainless Steel Dabba Deposit</div>
+              <div class="item-sub">Insulated 4-tier food-grade stainless steel dabba. <strong>100% Refundable</strong> instantly to original UPI upon semester end, hostel vacation, or plan cancellation.</div>
+            </td>
+            <td>
+              Assigned Dabba<br>
+              <span style="font-size: 10px; color: #6b7280;">Tag: #DB-ND-849</span>
+            </td>
+            <td class="text-center">1 Unit</td>
+            <td class="text-right">₹300.00</td>
+            <td class="text-right"><strong>₹300.00</strong></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td class="item-desc">
+              <div class="item-title">Campus Gate & Hostel Delivery Pass</div>
+              <div class="item-sub">Direct thermal-bag drop at Hostel Block 4 Gate with live SMS notification upon arrival. Priority delivery window guaranteed.</div>
+            </td>
+            <td><strong>Twice Daily</strong></td>
+            <td class="text-center">52 Drops</td>
+            <td class="text-right" style="color: #059669;">FREE</td>
+            <td class="text-right"><strong>₹0.00</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Bottom Calculations & Policies -->
+      <section class="summary-section">
+        <div class="guarantee-box">
+          <h4>STUDENT GUARANTEE & POLICIES</h4>
+          <ul>
+            <li><strong>Flexible 1-Click Pause:</strong> Going home or exam study groups? Pause daily lunch by 8:00 AM and dinner by 3:00 PM via MealMitra app. Unused meals roll over to next cycle.</li>
+            <li><strong>100% Dabba Refund:</strong> Return stainless steel tiffin clean to hostel drop-point. ₹300 credited back to your UPI within 2 hours.</li>
+            <li><strong>Hygiene Promise:</strong> Prepared in FSSAI-audited central commercial kitchen with 100% RO-purified water and zero artificial preservatives.</li>
+          </ul>
+        </div>
+
+        <div>
+          <table class="calculation-table">
+            <tr>
+              <td>Subtotal (Food & Services)</td>
+              <td class="text-right">₹3,399.00</td>
+            </tr>
+            <tr>
+              <td>Refundable Dabba Security Deposit</td>
+              <td class="text-right">₹300.00</td>
+            </tr>
+            <tr style="color: #059669;">
+              <td><strong>Student Welcome Rebate (CAMPUSMUNCH)</strong><br><small style="color: #6b7280;">₹400 Off monthly subscription</small></td>
+              <td class="text-right"><strong>- ₹400.00</strong></td>
+            </tr>
+            <tr>
+              <td>Applicable GST (CGST 2.5% + SGST 2.5%)<br><small style="color: #6b7280;">Composition food service scheme</small></td>
+              <td class="text-right">Included in Base</td>
+            </tr>
+            <tr class="grand-total">
+              <td>Total Amount Paid</td>
+              <td class="text-right">₹3,499.00</td>
+            </tr>
+          </table>
+          <p style="font-size: 9px; color: #6b7280; margin-top: 8px; text-align: right;">
+            Amount in words: <em>Three Thousand Seven Hundred Indian Rupees Only</em>
+          </p>
+        </div>
+      </section>
+
+      <!-- Signature Stamp Footer -->
+      <footer class="invoice-footer">
+        <div class="footer-notes">
+          <p><strong>Questions or Tiffin Timing Changes?</strong></p>
+          <p>MealMitra Campus Care: <strong>+91 98110 24700</strong> (7 AM - 10 PM)</p>
+          <p>Email: <a href="mailto:support@mealmitra.in" style="color: #ff5200;">support@mealmitra.in</a> • North Campus Dispatch Desk #2</p>
+          <p>This is a computer-generated tax invoice. No physical signature is required.</p>
+        </div>
+        <div class="stamp-box">
+          <div>MEALMITRA FOODS PVT LTD</div>
+          <div style="color: #059669; margin: 4px 0;">✔ PAYMENT VERIFIED & ACCOUNTED</div>
+          <div>16-OCT-2025 • NEW DELHI</div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Bottom Page Footer -->
+  <footer class="site-footer">
+    <div>
+      <strong style="color: #ffffff;">MealMitra</strong> • FSSAI Lic. #10023011000492
+    </div>
+    <div>
+      <a href="/Index After Login/indexAfterLogin.html">Home</a> | 
+      <a href="/WeeklyMenu/menu.html">Weekly Menu</a> | 
+      <a href="/Plan and Comparison/plan_and_comparison.html">Pricing</a> | 
+      <a href="#">Hygiene & Dabba Standards</a> | 
+      <a href="/HELP PAGE/help.html">Help & FAQs</a>
+    </div>
+    <div>
+      © 2025 MealMitra Foods Pvt. Ltd. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

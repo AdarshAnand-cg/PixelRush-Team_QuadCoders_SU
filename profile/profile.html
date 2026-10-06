@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MealMitra Subscriptions - Desktop View</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="profile.css"/>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="/Index After Login/indexAfterLogin.html" class="brand-group">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="6" rx="2"></rect>
+            <rect x="3" y="14" width="18" height="6" rx="2"></rect>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="10" x2="12" y2="14"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Meal<span>Mitra</span> <span class="tiffin-badge">TiffinBox</span></div>
+          <div class="brand-tagline">Ghar Ka Khana, Daily</div>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/Index After Login/indexAfterLogin.html">Home</a></li>
+        <li><a href="/WeeklyMenu/menu.html">Weekly Menu</a></li>
+        <li><a href="/WeeklyMenu/menu.html">Plans &amp; Pricing</a></li>
+        <li><a href="/MEAL SUBSCRIPTION/subscription.html" class="active">My Subscriptions</a></li>
+        <li><a href="/HELP PAGE/help.html">Help &amp; Support</a></li>
+        <li><a href="/REVIEW/review.html">Reviews</a></li>
+      </ul>
+
+      <div class="user-controls">
+        <div class="user-profile-badge">
+          <div class="user-avatar">AS</div>
+          <div class="user-meta">
+            <span class="user-name">Abhay Singh</span>
+            <span class="user-sub">Verified Student</span>
+          </div>
+        </div>
+
+        <a href="/Index Folder/index.html" class="logout-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          Logout
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="main-wrapper">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <!-- User Account Summary -->
+      <div class="account-card">
+        <div class="account-avatar-wrapper">
+          <div class="account-avatar">AS</div>
+        </div>
+        <div class="account-details">
+          <span class="account-label">My Account</span>
+          <span class="account-title">Abhay Singh</span>
+        </div>
+      </div>
+
+      <!-- Navigation links from reference image -->
+      <nav class="side-nav-card">
+        <ul class="side-nav-list">
+          <li>
+            <a href="/MEAL SUBSCRIPTION/subscription.html" class="side-nav-link active">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Subscriptions
+            </a>
+          </li>
+          <li>
+            <a href="#orders" class="side-nav-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              My Orders
+            </a>
+          </li>
+          <li>
+            <a href="#addresses" class="side-nav-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Addresses
+            </a>
+          </li>
+          <li>
+            <a href="#profile" class="side-nav-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Profile
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NEED HELP CARD -->
+      <div class="help-banner-card">
+        <div class="help-tag">Need Help?</div>
+        <div class="help-headline">Talk to us on WhatsApp</div>
+        <a href="https://wa.me/919811024700" target="_blank" class="help-chat-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          Chat now →
+        </a>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT PANEL -->
+    <section class="content-panel">
+      <!-- Panel Header -->
+      <div class="panel-header">
+        <div class="panel-header-text">
+          <h1>My Subscriptions</h1>
+          <p>Manage your meal plans, slots, and addresses.</p>
+        </div>
+        <a href="#plans" class="primary-cta-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          New subscription
+        </a>
+      </div>
+
+      <!-- Empty State Content Card -->
+      <div class="empty-state-box">
+        <div class="empty-icon-circle">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l2.4 6.6L21 11l-5.6 4.4L17 22l-5-4-5 4 1.6-6.6L3 11l6.6-2.4L12 2z"></path>
+          </svg>
+        </div>
+        <h2 class="empty-title">No subscriptions yet</h2>
+        <p class="empty-subtext">Try a meal at just <strong>₹49</strong> — it takes a minute.</p>
+        <a href="#plans" class="explore-plans-btn">
+          Explore plans →
+        </a>
+      </div>
+
+      <!-- Helpful trust badges matching MealMitra ecosystem -->
+      <div class="quick-perks">
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="perk-info">
+            <h4>Zero Lock-In Period</h4>
+            <p>Pause or cancel anytime with 1 click</p>
+          </div>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="perk-info">
+            <h4>Insulated Thermal Dabbas</h4>
+            <p>Food stays piping hot till 2:00 PM</p>
+          </div>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="perk-info">
+            <h4>FSSAI Certified Hubs</h4>
+            <p>100% pure desi cow ghee &amp; RO water</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Meal<span>Mitra</span></h3>
+        <p>Bringing the taste of home to your doorstep. Fresh, healthy, and delicious meals delivered daily across top campus hostels and university enclaves.</p>
+        <div class="footer-contact-item">
+          <span>📞 +91 1800-419-6325</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️ support@mealmitra.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📍 Bengaluru • Pune • Delhi NCR • Mumbai</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="/Plan and Comparison/plan_and_comparison.html">Meal Plans</a></li>
+          <li><a href="#kitchens">Our Kitchens</a></li>
+          <li><a href="/REVIEW/review.html">Student Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="/HELP PAGE/help.html">Help Center</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faqs">Hostel FAQ</a></li>
+          <li><a href="#pause-policy">Pause/Skip Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>LEGAL &amp; TRUST</h4>
+        <ul>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#refund">Refund Policy</a></li>
+        </ul>
+        <div class="fssai-box">
+          <div class="fssai-badge">
+            <span>✓</span> FSSAI Certified Kitchen
+          </div>
+          <div class="fssai-lic">Lic. 11223344005566</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 MealMitra Foods Pvt Ltd. All rights reserved. Ghar Ka Khana, Daily.
+    </div>
+  </footer>
+
+</body>
+</html>

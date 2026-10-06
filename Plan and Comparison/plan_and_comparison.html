@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MealMitra - Find Your Perfect Meal Plan</title>
+  <link rel="stylesheet" href="plan_and_comparison.css"/>
+</head>
+<body>
+  <div class="site-wrapper" data-purpose="root-wrapper">
+    <!-- BEGIN: MainHeader -->
+    <header class="site-header" data-purpose="site-navigation-header">
+      <div class="nav-inner">
+        <!-- Logo and Brand Name -->
+        <a class="brand-logo-area" href="#">
+          <img src="/logo.png" alt="" width="50px">
+          <div class="brand-titles">
+            <div class="brand-name">MealMitra <span class="brand-badge">TiffinBox</span></div>
+            <div class="brand-subline">Ghar Ka Khana, Daily</div>
+          </div>
+        </a>
+        <!-- Desktop Navigation Items -->
+        <ul class="nav-links">
+          <li><a class="nav-link" href="/Index After Login/indexAfterLogin.html">Home</a></li>
+          <li><a class="nav-link" href="/WeeklyMenu/menu.html">Weekly Menu</a></li>
+          <li><a class="nav-link active" href="/Plan and Comparison/plan_and_comparison.html">Plans &amp; Pricing</a></li>
+          <li><a class="nav-link" href="/MEAL SUBSCRIPTION/subscription.html">My Subscription</a></li>
+          <li><a class="nav-link" href="/HELP PAGE/help.html">Help &amp; Support</a></li>
+          <li><a class="nav-link" href="/REVIEW/review.html">Reviews</a></li>
+        </ul>
+        <!-- User Profile & Tiffin Delivery Status -->
+        <div class="header-user-status">
+          <div class="meal-status-pill" data-purpose="meals-countdown-badge">
+            <span class="status-dot"></span>
+            <span>18 Meals Left • Next: 12:30 PM</span>
+          </div>
+          <div class="user-pill" data-purpose="student-profile">
+            <div class="avatar-circle">AS</div>
+            <div class="user-info">
+              <span class="user-name">Abhay Singh</span>
+              <span class="user-tag">● Verified Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+
+    <main>
+      <!-- BEGIN: HeroSection -->
+      <section class="hero-area" data-purpose="page-hero">
+        <div class="page-container">
+          <div class="top-sub-badge">CHOOSE THE RIGHT FUEL FOR YOUR SEMESTER</div>
+          <h1 class="hero-title">Find Your Perfect <span>Meal Plan</span></h1>
+          <p class="hero-subtitle">
+            Fresh, hygienic, authentic home-style tiffins delivered right to your hostel or PG doorstep. Flexible pause, skip anytime, and zero locked commitment.
+          </p>
+          <!-- Billing Period Toggle Switches -->
+          <div class="billing-toggle-wrapper" data-purpose="billing-cadence-toggle">
+            <button class="toggle-btn active" type="button">
+              <span>Monthly (26 Days)</span>
+              <span class="toggle-discount-chip">20% OFF</span>
+            </button>
+            <button class="toggle-btn" type="button">15 Days Trial</button>
+            <button class="toggle-btn" type="button">Weekly Pass (6 Days)</button>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+
+      <!-- BEGIN: PricingCardsSection -->
+      <section class="pricing-cards-section" data-purpose="meal-pricing-cards">
+        <div class="page-container">
+          <div class="pricing-grid">
+            <!-- Card 1: Essential Tiffin -->
+            <div class="plan-card" data-purpose="tier-card-basic">
+              <div class="card-image-box">
+                <img alt="Essential Tiffin Thali Meal" src="https://lh3.googleusercontent.com/aida/AEtjO1VQkND920S5VVGHAagh53BYzDNQRukmi2axAAWdn15GTJIATww8RFVYEnsjGzcTHbSNHcxR5ir-d7BSuAX2NeCTaT2DrR--oB78228MfAZQZjD9qy2ssP0_gXtarcY5hUqBDDYdO2GgJmi5n10-bHHZ2f-TyJSsNN33qEnv5Yrmao0E-E5eKqTTcXnRmoQA_ty-6GCGlONNnPa50k1LULvD46upAOiXfNuOxBnXVm0ZZU5CvWWXqDK3Nsw"/>
+                <span class="image-overlay-badge">1 Meal / Day (Lunch/Dinner)</span>
+              </div>
+              <div class="card-body">
+                <h3 class="plan-name">Essential Tiffin</h3>
+                <p class="plan-desc">Ideal for students who already get dinner at hostel mess</p>
+                <div class="price-row">
+                  <span class="price-amount">₹1,799</span>
+                  <span class="price-period">/ month</span>
+                  <span class="per-meal-badge">₹69 / meal</span>
+                </div>
+                <div class="pill-tags-row">
+                  <span class="sub-chip">Mon - Sat Delivery</span>
+                  <span class="sub-chip">Free Dabba Service</span>
+                </div>
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span><strong>1 Meal per day</strong> (Option of Lunch or Dinner)</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>4 Soft Whole-Wheat Phulkas with Pure Ghee</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>1 Seasonal Fresh Sabzi + Homestyle Dal Tadka</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Steamed Basmati Rice + Fresh Onion Kachumber</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Up to 2 Meal Skips / Pauses allowed per month</span>
+                  </li>
+                </ul>
+                <button class="btn-card btn-secondary" type="button">Choose Basic Plan</button>
+              </div>
+            </div>
+
+            <!-- Card 2: Campus Champion (Featured) -->
+            <div class="plan-card featured" data-purpose="tier-card-champion">
+              <div class="featured-top-banner">
+                ★ MOST POPULAR ON CAMPUS • BEST VALUE
+              </div>
+              <div class="card-image-box">
+                <img alt="Campus Champion Complete Thali" src="https://lh3.googleusercontent.com/aida/AEtjO1VQkND920S5VVGHAagh53BYzDNQRukmi2axAAWdn15GTJIATww8RFVYEnsjGzcTHbSNHcxR5ir-d7BSuAX2NeCTaT2DrR--oB78228MfAZQZjD9qy2ssP0_gXtarcY5hUqBDDYdO2GgJmi5n10-bHHZ2f-TyJSsNN33qEnv5Yrmao0E-E5eKqTTcXnRmoQA_ty-6GCGlONNnPa50k1LULvD46upAOiXfNuOxBnXVm0ZZU5CvWWXqDK3Nsw"/>
+                <span class="image-overlay-badge">2 Meals / Day (Lunch + Dinner)</span>
+              </div>
+              <div class="card-body">
+                <h3 class="plan-name">Campus Champion</h3>
+                <p class="plan-desc">Complete daily balanced nutrition with weekend sweet feast</p>
+                <div class="price-row">
+                  <span class="price-amount">₹3,399</span>
+                  <span class="price-period">/ month</span>
+                  <span class="per-meal-badge">₹67 / meal</span>
+                </div>
+                <div class="pill-tags-row">
+                  <span class="sub-chip">Lunch &amp; Dinner</span>
+                  <span class="sub-chip">Unlimited Pauses</span>
+                  <span class="sub-chip">Sabzi Swap Free</span>
+                </div>
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span><strong>2 Wholesome Meals per day</strong> (Lunch + Dinner)</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>4 Soft Phulkas + 2 Sabzis (Dry + Gravy) + Dal</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Jeera Rice + Curd / Fresh Raita + Green Salad</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span><strong>Weekend Sweet Dish</strong> (Gulab Jamun/Kheer) included</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Unlimited meal pauses &amp; instant rollover balance</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Free hostel room doorstep drop with thermal kit</span>
+                  </li>
+                </ul>
+                <button class="btn-card btn-primary-coral" type="button">Start Standard Plan Now</button>
+              </div>
+            </div>
+
+            <!-- Card 3: Hearty Feast Royal -->
+            <div class="plan-card" data-purpose="tier-card-royal">
+              <div class="card-image-box">
+                <img alt="Hearty Feast Royal Indian Feast" src="https://lh3.googleusercontent.com/aida/AEtjO1VQkND920S5VVGHAagh53BYzDNQRukmi2axAAWdn15GTJIATww8RFVYEnsjGzcTHbSNHcxR5ir-d7BSuAX2NeCTaT2DrR--oB78228MfAZQZjD9qy2ssP0_gXtarcY5hUqBDDYdO2GgJmi5n10-bHHZ2f-TyJSsNN33qEnv5Yrmao0E-E5eKqTTcXnRmoQA_ty-6GCGlONNnPa50k1LULvD46upAOiXfNuOxBnXVm0ZZU5CvWWXqDK3Nsw"/>
+                <span class="image-overlay-badge">Unlimited Rotis + Paneer Special</span>
+              </div>
+              <div class="card-body">
+                <h3 class="plan-name">Hearty Feast Royal</h3>
+                <p class="plan-desc">For heavy appetite, gym goers &amp; sports diet needs</p>
+                <div class="price-row">
+                  <span class="price-amount">₹5,299</span>
+                  <span class="price-period">/ month</span>
+                  <span class="per-meal-badge">₹88 / meal</span>
+                </div>
+                <div class="pill-tags-row">
+                  <span class="sub-chip">Lunch + Snack + Dinner</span>
+                  <span class="sub-chip">Paneer 4×/week</span>
+                </div>
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Lunch + Evening Protein Snack + Deluxe Dinner</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span><strong>Unlimited Soft Rotis</strong> on demand</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Premium Paneer / Soya Chaap dishes 4 days a week</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Sunday Special Kathiyawadi or Biryani Feast</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>Priority 15-minute express delivery window</span>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span>100% Taste &amp; Freshness Money-Back Guarantee</span>
+                  </li>
+                </ul>
+                <button class="btn-card btn-secondary" type="button">Choose Premium Plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: PricingCardsSection -->
+
+      <!-- BEGIN: PlanRecommendations -->
+      <section class="recommendations-section" data-purpose="plan-fit-guide">
+        <div class="page-container">
+          <div class="recom-heading-area">
+            <h2 class="recom-title">Which MealMitra Plan is Right for You?</h2>
+            <p class="recom-subtitle">Quick recommendations tailored specifically for student living</p>
+          </div>
+          <div class="recom-grid">
+            <div class="recom-card">
+              <div class="recom-icon icon-green-bg">🍲</div>
+              <div>
+                <div class="recom-card-title">Basic Plan</div>
+                <div class="recom-card-text">For students who only need a hygienic lunch between packed lecture hours.</div>
+              </div>
+            </div>
+            <div class="recom-card">
+              <div class="recom-icon icon-red-bg">⭐</div>
+              <div>
+                <div class="recom-card-title">Standard Plan (Recommended)</div>
+                <div class="recom-card-text">For students living away from home wanting zero-stress wholesome lunch &amp; dinner.</div>
+              </div>
+            </div>
+            <div class="recom-card">
+              <div class="recom-icon icon-blue-bg">💪</div>
+              <div>
+                <div class="recom-card-title">Premium Plan</div>
+                <div class="recom-card-text">For sports athletes, gym-goers, and foodies craving richer gravies &amp; sweets.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: PlanRecommendations -->
+
+      <!-- BEGIN: WeekendDelightBanner -->
+      <section class="page-container" data-purpose="weekend-box-banner">
+        <div class="delight-banner">
+          <div>
+            <span class="delight-badge">WEEKEND DELIGHT</span>
+            <h3 class="delight-title">Make Your Meals Special: Weekend Dessert Box &amp; Sunday Feast</h3>
+            <p class="delight-desc">All Standard &amp; Premium monthly subscribers get our chef-crafted weekend sweet platter every Saturday and a lavish Sunday regional special lunch (Puri Shrikhand, Dal Baati, or Veg Pulao) at no extra charge!</p>
+          </div>
+          <a class="delight-btn" href="#">See Weekend Menu →</a>
+        </div>
+      </section>
+      <!-- END: WeekendDelightBanner -->
+
+      <!-- BEGIN: FeatureComparisonTable -->
+      <section class="table-section" data-purpose="detailed-plan-comparison">
+        <div class="page-container">
+          <div class="table-header-block">
+            <span class="table-badge">DETAILED BREAKDOWN</span>
+            <h2 class="table-main-title">Compare Plan Features</h2>
+            <p class="table-sub">Transparent comparison to help you choose the best value for money</p>
+          </div>
+          <div class="table-container-card">
+            <table class="spec-table" id="pricing-table">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>
+                    <div class="table-plan-title">Basic Plan</div>
+                    <div class="table-plan-price">₹1,799/mo</div>
+                  </th>
+                  <th class="th-highlight">
+                    <span class="most-popular-tag">★ MOST POPULAR</span>
+                    <div class="table-plan-title" style="color: #ff4742;">Standard Plan</div>
+                    <div class="table-plan-price">₹3,399/mo</div>
+                  </th>
+                  <th>
+                    <div class="table-plan-title">Premium Plan</div>
+                    <div class="table-plan-price">₹5,299/mo</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Meals per day</td>
+                  <td>1 Meal (Lunch or Dinner)</td>
+                  <td class="highlight-column"><strong>2 Meals (Lunch + Dinner)</strong></td>
+                  <td>2 Meals + Evening Snack</td>
+                </tr>
+                <tr>
+                  <td>Rotis included</td>
+                  <td>4 Phulkas (Tawa Ghee)</td>
+                  <td class="highlight-column">4 Phulkas per meal (8 total)</td>
+                  <td>Unlimited Rotis</td>
+                </tr>
+                <tr>
+                  <td>Dal &amp; Sabzi portion</td>
+                  <td>1 Dal + 1 Sabzi</td>
+                  <td class="highlight-column">1 Dal + 2 Sabzis per meal</td>
+                  <td>1 Dal + 2 Sabzis (incl. Paneer)</td>
+                </tr>
+                <tr>
+                  <td>Rice &amp; Sides</td>
+                  <td>Steamed Rice + Salad</td>
+                  <td class="highlight-column">Jeera Rice + Curd / Raita</td>
+                  <td>Flavored Rice + Raita + Papad</td>
+                </tr>
+                <tr>
+                  <td>Weekend Sunday Feast</td>
+                  <td><span class="muted-dash">—</span></td>
+                  <td class="highlight-column"><span class="table-check">✓</span> Included</td>
+                  <td><span class="table-check">✓</span> Deluxe Special</td>
+                </tr>
+                <tr>
+                  <td>Dessert / Sweet Dish</td>
+                  <td><span class="muted-dash">—</span></td>
+                  <td class="highlight-column">Every Weekend</td>
+                  <td>3 Times a week</td>
+                </tr>
+                <tr>
+                  <td>Meal Pause &amp; Rollover</td>
+                  <td>2 skips / month</td>
+                  <td class="highlight-column"><strong>Unlimited Skips</strong></td>
+                  <td><strong>Unlimited Skips</strong></td>
+                </tr>
+                <tr>
+                  <td>Sabzi Swap Option (+₹0)</td>
+                  <td><span class="muted-dash">—</span></td>
+                  <td class="highlight-column"><span class="table-check">✓</span> Available Daily</td>
+                  <td><span class="table-check">✓</span> Chef Custom Request</td>
+                </tr>
+                <tr>
+                  <td>Dabba Packaging</td>
+                  <td>Thermal Insulated Casing</td>
+                  <td class="highlight-column">Grade 304 Stainless Steel Box</td>
+                  <td>Electrically Heated Thermal Kit</td>
+                </tr>
+                <tr>
+                  <td>Delivery Window</td>
+                  <td>Standard (45 mins)</td>
+                  <td class="highlight-column">Campus Express (30 mins)</td>
+                  <td>Priority VIP (15 mins)</td>
+                </tr>
+                <tr>
+                  <td>Price per single meal</td>
+                  <td><strong>₹69</strong></td>
+                  <td class="highlight-column"><strong>₹67</strong></td>
+                  <td><strong>₹88</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- END: FeatureComparisonTable -->
+
+      <!-- BEGIN: FlexibilityCallout -->
+      <section class="page-container" data-purpose="flexibility-guarantee">
+        <div class="flex-section-box">
+          <div>
+            <span class="flex-tag">WORRY-FREE FLEXIBILITY</span>
+            <h3 class="flex-title">Your routine changes.<br/>Your meal plan can too.</h3>
+            <p class="flex-desc">Exam nights? Sudden weekend trip back home? Group party? Don't pay for meals you don't eat. Pause your tiffin with a single tap in the app before 9:00 AM.</p>
+            <div class="flex-perks">
+              <div class="flex-perk-item">
+                <span class="feature-check">✓</span>
+                <span>Pause anytime with 1-click</span>
+              </div>
+              <div class="flex-perk-item">
+                <span class="feature-check">✓</span>
+                <span>Never lose skipped meals</span>
+              </div>
+              <div class="flex-perk-item">
+                <span class="feature-check">✓</span>
+                <span>Free hostel doorstep delivery</span>
+              </div>
+              <div class="flex-perk-item">
+                <span class="feature-check">✓</span>
+                <span>100% FSSAI certified kitchens</span>
+              </div>
+            </div>
+          </div>
+          <!-- Smart Balance Wallet Box -->
+          <div class="wallet-card" data-purpose="wallet-callout-card">
+            <div class="wallet-header">
+              <div class="wallet-icon">💳</div>
+              <div>
+                <div class="wallet-title">Smart Balance Wallet</div>
+                <div class="wallet-subtitle">Transparent carry-forward policy</div>
+              </div>
+            </div>
+            <div class="wallet-quote">
+              "Skipped your dinner on Friday? Your account automatically carries forward that meal credit to the next billing cycle. No questions asked."
+            </div>
+            <div class="wallet-action-row">
+              <span>Have a specific dietary need?</span>
+              <a class="dietitian-link" href="#">Talk to Dietitian →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: FlexibilityCallout -->
+
+      <!-- BEGIN: BottomCtaBanner -->
+      <section class="page-container" data-purpose="conversion-cta">
+        <div class="bottom-cta-banner">
+          <div>
+            <h2 class="cta-heading">Good food. Simple plans. Your MealMitra.</h2>
+            <p class="cta-subtext">Join over 4,500+ happy university students enjoying hot, homely, and nutritious meals every single day.</p>
+          </div>
+          <div class="cta-buttons-group">
+            <a class="btn-white" href="/Customize plan/customize_plan.html">Customize Your Dabba</a>
+            <a class="btn-outline-white" href="#">Contact For Bulk Plans</a>
+          </div>
+        </div>
+      </section>
+      <!-- END: BottomCtaBanner -->
+    </main>
+
+    <!-- BEGIN: MainFooter -->
+    <footer class="site-footer" data-purpose="site-footer">
+      <div class="page-container">
+        <div class="footer-grid">
+          <!-- Column 1: Brand Info -->
+          <div>
+            <div class="footer-brand-title">
+              Meal<span>Mitra</span>
+            </div>
+            <p class="footer-brand-desc">
+              Bringing the taste of home to your doorstep. Fresh, healthy, and delicious meals delivered daily across top tech parks and universities.
+            </p>
+            <div class="footer-contact-list">
+              <div>📞 +91 1800-419-6325</div>
+              <div>✉ support@mealmitra.com</div>
+              <div>📍 Kalol • Gandhinagar • Ahmedabad</div>
+            </div>
+          </div>
+          <!-- Column 2: Company -->
+          <div>
+            <div class="footer-column-title">Company</div>
+            <ul class="footer-links-list">
+              <li><a href="/Plan and Comparison/plan_and_comparison.html">Meal Plans</a></li>
+              <li><a href="#">Healthy Meals</a></li>
+              <li><a href="/MEAL SUBSCRIPTION/subscription.html">Subscription</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Kitchens</a></li>
+            </ul>
+          </div>
+          <!-- Column 3: Support -->
+          <div>
+            <div class="footer-column-title">Support</div>
+            <ul class="footer-links-list">
+              <li><a href="/HELP PAGE/help.html">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Pause/Skip Policy</a></li>
+              <li><a href="/REVIEW/review.html">Feedback</a></li>
+            </ul>
+          </div>
+          <!-- Column 4: Legal & Trust -->
+          <div>
+            <div class="footer-column-title">Legal &amp; Trust</div>
+            <div class="fssai-box">
+              <div class="fssai-title">🛡 FSSAI Certified</div>
+              <div class="fssai-number">Lic. 11223344005566</div>
+            </div>
+            <ul class="footer-links-list">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sub Footer Bar -->
+        <div class="footer-bottom-bar">
+          <div>© 2025 MealMitra Foods Pvt Ltd. All rights reserved.</div>
+          <div class="social-icons-group">
+            <span aria-label="Instagram" class="social-btn">IG</span>
+            <span aria-label="Twitter" class="social-btn">TW</span>
+            <span aria-label="YouTube" class="social-btn">YT</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END: MainFooter -->
+  </div>
+</body>
+</html>

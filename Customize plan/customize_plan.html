@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MealMitra - Customize Your Meal Plan</title>
+  <link rel="stylesheet" href="customize_plan.css"/>
+</head>
+<body>
+  <!-- BEGIN: MainHeader -->
+  <header class="site-header" data-purpose="global-navigation">
+    <div class="header-inner">
+      <!-- Brand lockup -->
+      <div class="brand-group">
+        <img src="/logo.png" alt="" width="50px">
+        <div class="brand-text">
+          <h1>MealMitra <span class="brand-pill">TiffinBox</span></h1>
+          <div class="brand-sub">Ghar Ka Khana, Daily</div>
+        </div>
+      </div>
+      <!-- Main Navigation Menu -->
+      <nav class="nav-links">
+        <a class="nav-link" href="/Index After Login/indexAfterLogin.html">Home</a>
+        <a class="nav-link" href="/WeeklyMenu/menu.html">Weekly Menu</a>
+        <a class="nav-link active" href="/Plan and Comparison/plan_and_comparison.html">Plans &amp; Pricing</a>
+        <a class="nav-link" href="/MEAL SUBSCRIPTION/subscription.html">My Subscription</a>
+        <a class="nav-link" href="/HELP PAGE/help.html">Help &amp; Support</a>
+        <a class="nav-link" href="/REVIEW/review.html">Reviews</a>
+      </nav>
+      <!-- Active Subscription & Profile Pill -->
+      <div class="header-actions">
+        <div class="meals-badge" data-purpose="subscription-status">
+          <span class="status-dot"></span>
+          <span>18 Meals Left • Next: 12:30 PM</span>
+        </div>
+        <div class="user-profile" data-purpose="user-badge">
+          <div class="avatar-circle">AS</div>
+          <div class="user-info">
+            <div class="user-name">Abhay Singh</div>
+            <div class="user-tag">• Verified Student</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END: MainHeader -->
+
+  <!-- BEGIN: PageContent -->
+  <main class="main-wrapper">
+    <!-- BEGIN: PageHeaderBanner -->
+    <section class="page-header" data-purpose="progress-and-title">
+      <div class="eyebrow-row">
+        <div class="eyebrow-left">
+          <span class="step-tag">04 — CUSTOMIZE PROGRAM</span>
+          <span class="cert-pill">✓ 100% Homestyle | Pure Desi Ghee | FSSAI Certified</span>
+        </div>
+        <div class="progress-track-wrapper">
+          <span>Step 2 of 3: Plan Tailoring</span>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="page-title">Customize Your Meal Plan</h2>
+      <p class="page-subtitle">Personalize your meals, frequency, dietary preference, portion size, and add-ons. 100% pause and rollover flexibility with zero penalty.</p>
+    </section>
+    <!-- END: PageHeaderBanner -->
+
+    <!-- BEGIN: TwoColumnGrid -->
+    <div class="content-grid">
+      <!-- LEFT COLUMN: Step Configurations -->
+      <div class="steps-column">
+        <!-- Step 1: Choose Your Meals -->
+        <article class="step-block" data-purpose="step-meals">
+          <div class="step-title-area">
+            <h3 class="step-heading">🍽 1. Choose your meals</h3>
+            <p class="step-subtext">Select which meals you would like delivered daily to your doorstep</p>
+          </div>
+          <div class="meals-grid">
+            <!-- Lunch Only -->
+            <div class="meal-card" data-purpose="lunch-option">
+              <div>
+                <div class="meal-card-top">
+                  <span class="meal-title">Lunch Only</span>
+                  <span class="meal-icon">☀️</span>
+                </div>
+                <p class="meal-desc">Pack to campus or workstation</p>
+              </div>
+              <div>
+                <div class="meal-price-row">
+                  <span class="price-main">₹1,999</span>
+                  <span style="font-size:11px; color:#64748b;">/mo</span>
+                </div>
+                <div class="price-sub">₹77 per meal</div>
+              </div>
+            </div>
+
+            <!-- Dinner Only -->
+            <div class="meal-card" data-purpose="dinner-option">
+              <div>
+                <div class="meal-card-top">
+                  <span class="meal-title">Dinner Only</span>
+                  <span class="meal-icon">🌙</span>
+                </div>
+                <p class="meal-desc">Light, soothing homestyle dinner</p>
+              </div>
+              <div>
+                <div class="meal-price-row">
+                  <span class="price-main">₹1,999</span>
+                  <span style="font-size:11px; color:#64748b;">/mo</span>
+                </div>
+                <div class="price-sub">₹77 per meal</div>
+              </div>
+            </div>
+
+            <!-- Lunch + Dinner (Selected) -->
+            <div class="meal-card active" data-purpose="full-meal-option">
+              <span class="popular-badge">MOST POPULAR</span>
+              <div>
+                <div class="meal-card-top">
+                  <span class="meal-title">Lunch + Dinner</span>
+                  <span class="meal-icon">♾️</span>
+                </div>
+                <p class="meal-desc">Full day complete nutrition plan</p>
+              </div>
+              <div>
+                <div class="meal-price-row">
+                  <span class="price-main highlight">₹3,399</span>
+                  <span style="font-size:11px; color:#64748b;">/mo</span>
+                </div>
+                <div class="price-sub">₹65 per meal (Save ₹600)</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 2: Dietary Preference -->
+        <article class="step-block" data-purpose="step-diet">
+          <div class="step-title-area">
+            <h3 class="step-heading">🥗 2. What would you like to eat?</h3>
+            <p class="step-subtext">Strictly 100% segregated kitchens with distinct cookware and preparation zones</p>
+          </div>
+          <div class="diet-grid">
+            <!-- Vegetarian (Selected) -->
+            <div class="diet-card selected" data-purpose="veg-selection">
+              <div class="diet-header">
+                <div class="diet-title-wrap">
+                  <div class="veg-symbol"><div class="veg-dot"></div></div>
+                  <span class="diet-name">Pure Vegetarian Thali</span>
+                </div>
+                <span class="diet-check">✓</span>
+              </div>
+              <p class="diet-desc">Prepared with cold-pressed mustard &amp; groundnut oils and finished with Gir cow A2 Desi Ghee. Balanced protein from lentils and paneer.</p>
+              <div class="dishes-pill-container">
+                <span class="dish-tag">4 Phulkas</span>
+                <span class="dish-tag">Dal Tadka</span>
+                <span class="dish-tag">Seasonal Sabzi</span>
+                <span class="dish-tag">Basmati Rice</span>
+                <span class="dish-tag">Sprout Salad</span>
+              </div>
+            </div>
+
+            <!-- Non-Vegetarian Rotation -->
+            <div class="diet-card" data-purpose="nonveg-selection">
+              <div class="diet-header">
+                <div class="diet-title-wrap">
+                  <div class="nonveg-symbol"><div class="nonveg-dot"></div></div>
+                  <span class="diet-name">Non-Vegetarian Rotation</span>
+                </div>
+                <div class="diet-radio-unselected"></div>
+              </div>
+              <p class="diet-desc">4x weekly homestyle Chicken Curry or Egg Bhurji / Curry, paired with 3 weekly Satvik vegetarian wellness thalis.</p>
+              <div style="font-size: 11px; color:#64748b; font-weight:600; margin-top:14px;">
+                Homestyle Gravy • Fresh Cuts Only • Zero Pre-cooked Bases
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 3: Start Date & Schedule -->
+        <article class="step-block" data-purpose="step-schedule">
+          <div class="step-title-area">
+            <h3 class="step-heading">📅 3. When should your plan start?</h3>
+            <p class="step-subtext">Pause or reschedule anytime with 1-click before 8:00 AM daily</p>
+          </div>
+          <!-- Quick Selection Pills -->
+          <div class="date-quick-pills">
+            <button class="quick-pill active" type="button">Tomorrow (18 Oct)</button>
+            <button class="quick-pill" type="button">Day After (19 Oct)</button>
+            <button class="quick-pill" type="button">Next Monday (21 Oct)</button>
+          </div>
+          <!-- Mini Interactive Calendar -->
+          <div class="calendar-container">
+            <div class="calendar-nav">
+              <span>October 2026</span>
+              <div class="calendar-arrows">
+                <span>&lt;</span>
+                <span>&gt;</span>
+              </div>
+            </div>
+            <div class="calendar-grid">
+              <div class="cal-header">Su</div>
+              <div class="cal-header">Mo</div>
+              <div class="cal-header">Tu</div>
+              <div class="cal-header">We</div>
+              <div class="cal-header">Th</div>
+              <div class="cal-header">Fr</div>
+              <div class="cal-header">Sa</div>
+              <div class="cal-day muted">27</div>
+              <div class="cal-day muted">28</div>
+              <div class="cal-day muted">29</div>
+              <div class="cal-day muted">30</div>
+              <div class="cal-day">1</div>
+              <div class="cal-day">2</div>
+              <div class="cal-day">3</div>
+              <div class="cal-day">4</div>
+              <div class="cal-day">5</div>
+              <div class="cal-day">6</div>
+              <div class="cal-day">7</div>
+              <div class="cal-day">8</div>
+              <div class="cal-day">9</div>
+              <div class="cal-day">10</div>
+              <div class="cal-day">11</div>
+              <div class="cal-day">12</div>
+              <div class="cal-day">13</div>
+              <div class="cal-day">14</div>
+              <div class="cal-day">15</div>
+              <div class="cal-day">16</div>
+              <div class="cal-day">17</div>
+              <div class="cal-day selected">18</div>
+              <div class="cal-day">19</div>
+              <div class="cal-day">20</div>
+              <div class="cal-day">21</div>
+              <div class="cal-day">22</div>
+              <div class="cal-day">23</div>
+              <div class="cal-day">24</div>
+              <div class="cal-day">25</div>
+              <div class="cal-day">26</div>
+              <div class="cal-day">27</div>
+              <div class="cal-day">28</div>
+              <div class="cal-day">29</div>
+              <div class="cal-day">30</div>
+              <div class="cal-day">31</div>
+            </div>
+          </div>
+          <!-- Scheduled Confirmation Notification -->
+          <div class="schedule-alert-banner">
+            <span>✓</span>
+            <span>Scheduled: Tomorrow, 18 October 2026 (Delivery starts with Lunch at 12:30 PM)</span>
+          </div>
+        </article>
+
+        <!-- Step 4: Duration Selection -->
+        <article class="step-block" data-purpose="step-duration">
+          <div class="step-title-area">
+            <h3 class="step-heading">⏱ 4. How long do you need your plan?</h3>
+            <p class="step-subtext">Unused meal credits never expire — carry over seamlessly to following months</p>
+          </div>
+          <div class="duration-grid">
+            <!-- 7 Days -->
+            <div class="duration-card">
+              <span class="duration-type">TRIAL PACK</span>
+              <div class="duration-days">7 Days</div>
+              <div class="duration-cost">₹1,049</div>
+            </div>
+            <!-- 15 Days -->
+            <div class="duration-card">
+              <span class="duration-type">FORTNIGHT</span>
+              <div class="duration-days">15 Days</div>
+              <div class="duration-cost">₹1,999</div>
+            </div>
+            <!-- 30 Days (Selected) -->
+            <div class="duration-card active">
+              <span class="best-val-tag">BEST VALUE</span>
+              <span class="duration-type highlight">STANDARD</span>
+              <div class="duration-days">30 Days</div>
+              <div class="duration-cost highlight">₹3,399</div>
+              <div class="duration-savings">Save ₹800</div>
+            </div>
+            <!-- 45 Days -->
+            <div class="duration-card">
+              <span class="duration-type">SEMESTER</span>
+              <div class="duration-days">45 Days</div>
+              <div class="duration-cost">₹4,899</div>
+              <div class="duration-savings">Save ₹1,400</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 5: Add-ons & Extras -->
+        <article class="step-block" data-purpose="step-addons">
+          <div class="step-title-area">
+            <h3 class="step-heading">➕ 5. Add-ons &amp; Extras to your box</h3>
+            <p class="step-subtext">Freshly rolled and churned every day before the dispatch slot</p>
+          </div>
+          <div class="addons-list">
+            <!-- Addon 1 -->
+            <div class="addon-item">
+              <div class="addon-left">
+                <span class="addon-icon">🫓</span>
+                <div>
+                  <div class="addon-title-row">
+                    <span class="addon-name">Extra Soft Phulka (+₹12/meal)</span>
+                    <span class="demand-badge">High Demand</span>
+                  </div>
+                  <div class="addon-desc">2 extra tawa puffed rotis brushed with pure A2 desi cow ghee</div>
+                </div>
+              </div>
+              <div class="toggle-switch on"><div class="toggle-circle"></div></div>
+            </div>
+            <!-- Addon 2 -->
+            <div class="addon-item">
+              <div class="addon-left">
+                <span class="addon-icon">🥗</span>
+                <div>
+                  <div class="addon-title-row">
+                    <span class="addon-name">Sprouted Moong Portion (+₹25/meal)</span>
+                  </div>
+                  <div class="addon-desc">Crunchy steamed sprout salad with Himalayan pink salt &amp; lemon</div>
+                </div>
+              </div>
+              <div class="toggle-switch off"><div class="toggle-circle"></div></div>
+            </div>
+            <!-- Addon 3 -->
+            <div class="addon-item">
+              <div class="addon-left">
+                <span class="addon-icon">🍮</span>
+                <div>
+                  <div class="addon-title-row">
+                    <span class="addon-name">Homestyle Sweet Treat (+₹18/meal)</span>
+                  </div>
+                  <div class="addon-desc">Alternate rotating treats: Motichoor Laddu, Kheer, or Gajar Halwa</div>
+                </div>
+              </div>
+              <div class="toggle-switch on"><div class="toggle-circle"></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- RIGHT COLUMN: Sticky Summary Order Card -->
+      <aside class="summary-column" data-purpose="sticky-order-summary">
+        <div class="summary-card">
+          <div class="summary-header">
+            <span class="summary-title">📋 Your MealMitra Plan</span>
+            <a class="edit-link" href="#edit">Edit Options</a>
+          </div>
+          <!-- Plan Meta Information -->
+          <div class="plan-meta-table">
+            <div class="meta-row">
+              <span class="meta-key">Meal Plan</span>
+              <span class="meta-val highlight">Lunch + Dinner (2 Meals/day)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Diet Mode</span>
+              <span class="meta-val">Pure Vegetarian</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Start Date</span>
+              <span class="meta-val">18 Oct 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Duration</span>
+              <span class="meta-val">30 Days (60 Meals)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Packaging</span>
+              <span class="meta-val green">Eco-Steel Thermal Dabba</span>
+            </div>
+          </div>
+          <!-- Billing Items Breakdown -->
+          <div class="billing-breakdown">
+            <div class="bill-row">
+              <span>Base Plan (30 Days × 2 Meals)</span>
+              <span>₹4,199</span>
+            </div>
+            <div class="bill-row rebate">
+              <span>🏷 Campus &amp; Professional Rebate</span>
+              <span>-₹800</span>
+            </div>
+            <div class="bill-row">
+              <span>Add on: Extra Soft Phulkas (60 meals)</span>
+              <span>+₹720</span>
+            </div>
+            <div class="bill-row">
+              <span>Add on: Homestyle Sweet Treats</span>
+              <span>+₹300</span>
+            </div>
+            <div class="bill-row">
+              <span>Eco-Dabba Security Deposit (Refundable)</span>
+              <span>₹500</span>
+            </div>
+            <div class="bill-row free">
+              <span>Cook-to-Door Delivery &amp; Packaging</span>
+              <span>FREE</span>
+            </div>
+          </div>
+          <!-- Total & CTA -->
+          <div class="total-section">
+            <div class="total-row">
+              <span class="total-label">Total Payable</span>
+              <span class="total-amount">₹3,399</span>
+            </div>
+            <div class="daily-cost-note">
+              <span>Net Daily Cost</span>
+              <span>₹113/day (₹56.6 per meal)</span>
+            </div>
+          </div>
+          <button class="subscribe-btn" type="button"><a href="/MY SUBSCRIPTION/mysubscription.html"><span>Continue to Subscribe</span></a>
+            
+            <span>→</span>
+          </button>
+          <!-- Trust Signals -->
+          <div class="trust-badges-row">
+            <div class="trust-item">
+              <span class="trust-icon">🛡️</span>
+              <span>3-Day Trial<br/>Guarantee</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🛡️</span>
+              <span>100% FSSAI<br/>Certified</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">♻️</span>
+              <span>Zero Plastic<br/>Used</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- END: TwoColumnGrid -->
+
+    <!-- BEGIN: MealPreviewSection -->
+    <section class="preview-section" data-purpose="thali-preview-card">
+      <div class="preview-header">
+        <div>
+          <div class="preview-eyebrow">VISUAL INSPECTION</div>
+          <h3 class="preview-title">Your Meal Preview: Chef's Daily Thali</h3>
+        </div>
+        <a class="see-menu-link" href="#menu-details">See Full 7-Day Menu →</a>
+      </div>
+      <div class="thali-split-card">
+        <!-- High Quality Image Placeholder -->
+        <div class="thali-photo-wrapper">
+          <img alt="Authentic Indian Satvik Thali Meal" src="https://lh3.googleusercontent.com/aida/AEtjO1VQkND920S5VVGHAagh53BYzDNQRukmi2axAAWdn15GTJIATww8RFVYEnsjGzcTHbSNHcxR5ir-d7BSuAX2NeCTaT2DrR--oB78228MfAZQZjD9qy2ssP0_gXtarcY5hUqBDDYdO2GgJmi5n10-bHHZ2f-TyJSsNN33qEnv5Yrmao0E-E5eKqTTcXnRmoQA_ty-6GCGlONNnPa50k1LULvD46upAOiXfNuOxBnXVm0ZZU5CvWWXqDK3Nsw"/>
+          <div class="today-pill">✓ Today's Curated Serving</div>
+        </div>
+        <!-- Thali Breakdown Details -->
+        <div class="thali-info">
+          <h3>Standard Satvik North-Indian Thali</h3>
+          <p>Portioned precisely to provide 650 kcal, 24g clean protein, and zero refined sugars.</p>
+          <div class="dish-checklist">
+            <div class="check-item"><span class="check-icon">✓</span> 4 Soft Wholewheat Phulkas</div>
+            <div class="check-item"><span class="check-icon">✓</span> Dal Tadka / Panchratna Dal</div>
+            <div class="check-item"><span class="check-item check-icon">✓</span> Seasonal Paneer Sabzi</div>
+            <div class="check-item"><span class="check-icon">✓</span> Jeera Steamed Rice Bowl</div>
+            <div class="check-item"><span class="check-icon">✓</span> Pomegranate Bundi Raita</div>
+            <div class="check-item"><span class="check-icon">✓</span> Kachumber Green Salad</div>
+          </div>
+          <div class="dabba-cert-note">
+            <span>🛡</span>
+            <span>Packaged in food-grade 304 insulated stainless steel dabbas.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: MealPreviewSection -->
+
+    <!-- BEGIN: TrustPillarsSection -->
+    <section class="pillars-grid" data-purpose="trust-pillars">
+      <div class="pillar-card">
+        <span class="pillar-icon">🍲</span>
+        <div class="pillar-text">
+          <h4>Slow-Cooked Daily Fresh</h4>
+          <p>No re-heated leftovers, pre-made frozen gravies, or sodium enhancers.</p>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">🛡️</span>
+        <div class="pillar-text">
+          <h4>Hygienic Tiffin Transit</h4>
+          <p>Dispatched in tamper-proof thermal bags within 45 minutes of preparation.</p>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">🔄</span>
+        <div class="pillar-text">
+          <h4>Total Freedom</h4>
+          <p>Shift delivery locations between campus, office, and home on any given day.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END: TrustPillarsSection -->
+  </main>
+  <!-- END: PageContent -->
+
+  <!-- BEGIN: SiteFooter -->
+  <footer class="site-footer" data-purpose="main-footer">
+    <div class="footer-inner">
+      <div class="footer-top-grid">
+        <!-- Logo & Contact -->
+        <div class="footer-brand">
+          <h2>Meal<span>Mitra</span></h2>
+          <p class="footer-mission">
+            Bringing the taste of home to your doorstep. Fresh, healthy, and delicious meals delivered daily across top tech parks and universities.
+          </p>
+          <div class="contact-item">
+            <span>📞</span> <span>+91 1800-419-6325</span>
+          </div>
+          <div class="contact-item">
+            <span>✉️</span> <span>support@mealmitra.com</span>
+          </div>
+          <div class="contact-item">
+            <span>📍</span> <span>Kalol • Gandhinagar • Ahmedabad</span>
+          </div>
+        </div>
+        <!-- Links: Company -->
+        <div class="footer-col">
+          <h5>COMPANY</h5>
+          <ul class="footer-links-list">
+            <li><a href="/Plan and Comparison/plan_and_comparison.html">Meal Plans</a></li>
+            <li><a href="#healthy">Healthy Meals</a></li>
+            <li><a href="/MEAL SUBSCRIPTION/subscription.html">Subscription</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#kitchens">Our Kitchens</a></li>
+          </ul>
+        </div>
+        <!-- Links: Support -->
+        <div class="footer-col">
+          <h5>SUPPORT</h5>
+          <ul class="footer-links-list">
+            <li><a href="/HELP PAGE/help.html">Help Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#skip">Pause/Skip Policy</a></li>
+            <li><a href="/REVIEW/review.html">Feedback</a></li>
+          </ul>
+        </div>
+        <!-- Links: Legal & Certifications -->
+        <div class="footer-col">
+          <h5>LEGAL &amp; TRUST</h5>
+          <div class="fssai-box">
+            <div class="fssai-box-title">FSSAI Certified</div>
+            <div class="fssai-box-lic">Lic. 11223344005566</div>
+          </div>
+          <ul class="footer-links-list">
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#refund">Refund Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright & Bottom Nav -->
+      <div class="footer-bottom">
+        <div>© 2026 MealMitra Foods Pvt Ltd. All rights reserved.</div>
+        <div class="social-icons-group">
+          <span>📷</span>
+          <span>💼</span>
+          <span>▶️</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: SiteFooter -->
+</body>
+</html>
